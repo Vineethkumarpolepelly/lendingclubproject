@@ -1,0 +1,9 @@
+{
+	"name": "ttproject-df",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ebae49e9-9949-4a12-b0bd-0a4a4e127976",
+		"tenantId": "51824f8c-481c-459b-85a8-7c0072b4957a"
+	}
+}

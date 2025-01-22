@@ -1,0 +1,27 @@
+{
+	"name": "trigger8",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline1",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"filename": "@triggerBody().filename"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/sales/blobs/landing",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/d5d187c5-3787-4cdf-bf75-9c7cc594dd20/resourceGroups/trendytech-rg/providers/Microsoft.Storage/storageAccounts/ttstorageproject1999",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
